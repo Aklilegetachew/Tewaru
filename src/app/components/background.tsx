@@ -10,7 +10,7 @@ export const InfoSection: React.FC<InfoSectionProps> = ({ title, content, imageU
   return (
     <section className="container mx-auto px-4 py-12 lg:py-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center my-32">
-        {/* Text Section */}
+      
         <div>
           <h2 className="text-4xl font-bold text-black mb-6">{title}</h2>
           {content.map((paragraph, index) => (
@@ -20,7 +20,7 @@ export const InfoSection: React.FC<InfoSectionProps> = ({ title, content, imageU
           ))}
         </div>
 
-        {/* Image Section */}
+        
         <div className="w-full jsudtify-end">
           <Image
             src={imageUrl}

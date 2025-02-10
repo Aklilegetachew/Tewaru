@@ -8,6 +8,11 @@ import { ServicesSection } from "../components/serviceSection";
 import { HiDocument } from "react-icons/hi";
 import { BankingSolutions } from "../components/solutionsCards";
 import { ExpertiseSection } from "../components/expertis";
+import IdCardSection from "../components/leftCard";
+import RightCardSection from "../components/rightCard";
+
+import { ProductGrid } from "../components/product-grid";
+import { SectionWithImage } from "../components/section-with-image";
 
 export default function Home() {
   const content = [
@@ -99,17 +104,41 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <Hero title={"ABOUT"} />
-      <InfoSection
-        title={"Background History"}
-        content={content}
-        imageUrl={imageUrl}
+      <Hero title={"IMPORT"} />
+      <BankingSolutions
+        cards={bankingCards}
+        title="BANKING AND CARD SOLUTIONS"
+        highlightWord="AND"
       />
-      <ServicesSection {...servicesSectionProps} />
-      <div className="min-h-screen bg-white">
-        <ExpertiseSection {...expertiseData} />
-      </div>
-     
+      <IdCardSection
+        title="IDENTIFICATION"
+        highlightedWord="AND"
+        mainHeading="ID CARD PRINTERS AND ITS CONSUMABLES"
+        description="OUR IMPORTED ID CARD PRINTERS AND CONSUMABLES ENSURE SEAMLESS AND PROFESSIONAL IDENTIFICATION SOLUTIONS. DESIGNED FOR PRECISION AND RELIABILITY, THESE PRODUCTS ARE IDEAL FOR ORGANIZATIONS, SCHOOLS, AND GOVERNMENT INSTITUTIONS REQUIRING HIGH-QUALITY IDENTITY PRINTING SYSTEMS."
+        additionalText="OUR IMPORTED ID CARD PRINTERS AND CONSUMABLES ENSURE SEAMLESS AND PROFESSIONAL IDENTIFICATION SOLUTIONS. DESIGNED FOR PRECISION AND RELIABILITY, THESE PRODUCTS ARE IDEAL FOR ORGANIZATIONS, SCHOOLS, AND GOVERNMENT INSTITUTIONS REQUIRING HIGH-QUALITY IDENTITY PRINTING SYSTEMS."
+      />
+
+      <RightCardSection
+        title="IDENTIFICATION"
+        highlightedWord="AND"
+        mainHeading="ID CARD PRINTERS AND ITS CONSUMABLES"
+        description="OUR IMPORTED ID CARD PRINTERS AND CONSUMABLES ENSURE SEAMLESS AND PROFESSIONAL IDENTIFICATION SOLUTIONS. DESIGNED FOR PRECISION AND RELIABILITY, THESE PRODUCTS ARE IDEAL FOR ORGANIZATIONS, SCHOOLS, AND GOVERNMENT INSTITUTIONS REQUIRING HIGH-QUALITY IDENTITY PRINTING SYSTEMS."
+        additionalText="OUR IMPORTED ID CARD PRINTERS AND CONSUMABLES ENSURE SEAMLESS AND PROFESSIONAL IDENTIFICATION SOLUTIONS. DESIGNED FOR PRECISION AND RELIABILITY, THESE PRODUCTS ARE IDEAL FOR ORGANIZATIONS, SCHOOLS, AND GOVERNMENT INSTITUTIONS REQUIRING HIGH-QUALITY IDENTITY PRINTING SYSTEMS."
+      />
+
+      <ProductGrid />
+
+      <SectionWithImage
+        title="AFTER-SALES"
+        highlightedWord="SUPPORT"
+        icon="headphones"
+        heading="After-Sales Support"
+        subheading="Your Trusted Partner for Maintenance and Support"
+        description="We understand that purchasing equipment is just the first step. Our after-sales support ensures that your investment continues to perform optimally over time. We provide expert maintenance and support services for a variety of specialized equipment."
+        imageUrl="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DHBgcfS42P6lJvB3JcOQWHwRlp2v7R.png"
+        imagePosition="right"
+      />
+
       <Footer />
     </main>
   );
