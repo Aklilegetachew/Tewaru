@@ -7,6 +7,8 @@ import { Hero } from "./components/hero";
 import { PartnersSection } from "./components/partnerSection";
 import { ServicesSection } from "./components/serviceSection";
 import { WhyChooseUsSection } from "./components/whyChooseUs";
+import { RiSeedlingLine } from "react-icons/ri";
+import { BsFillCreditCard2BackFill } from "react-icons/bs";
 
 export default function Home() {
   const servicesSectionProps = {
@@ -14,25 +16,24 @@ export default function Home() {
     title: "SERVICES & PRODUCTS",
     services: [
       {
-        icon: FaGlobe,
-        title: "SERVICE 1",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        icon: RiSeedlingLine,
+        title: "Export Services",
+        description: "We export high-quality oil seeds, pulses, and coffee.",
         link: "#",
       },
       {
-        icon: FaBox,
-        title: "SERVICE 2",
+        icon: BsFillCreditCard2BackFill,
+        title: "Banking Solutions",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+          "Providing personalization machines and EMV solutions for banking.",
         link: "#",
         highlight: true, // This will have an orange background
       },
       {
         icon: FaTruck,
-        title: "SERVICE 3",
+        title: "Vehicle Tires",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+          "Supplying a wide range of vehicle tires in different sizes.",
         link: "#",
       },
     ],
