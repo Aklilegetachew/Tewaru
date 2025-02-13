@@ -101,34 +101,84 @@ export default function Home() {
       },
     ],
   };
+
+  const products = [
+    {
+      title: "ATM Cards ",
+      description: "Secure, high-quality cards for banking transactions",
+      imageUrl: "./atms.png",
+    },
+    {
+      title: "Personalization Machines & EMV Solutions",
+      description:
+        "Machines used for encoding customer details on ATM, credit, and ID cards",
+      imageUrl: "./personalization.png",
+    },
+    {
+      title: "ID Card Printers & Consumables",
+      description:
+        "Essential equipment for banks, businesses, and government institutions for identity verification.",
+      imageUrl: "./S3610.webp",
+    },
+    {
+      title: "S7000",
+      description:
+        "2000 cph • Centralized card issuance • Mailing and fulfilment inline • Flat and embossed cards • EMV compliant • laser marking technology option.",
+      imageUrl: "./S7000.webp",
+    },
+    {
+      title: "S6200",
+      description:
+        "Complete printing and embossing solution designed for centralized financial card issuance",
+      imageUrl: "./S600.webp",
+    },
+
+    {
+      title: "S5200E",
+      description:
+        "Entry level solution for low to mid volume card embossing • Indenting and tipping features • EMV compliance • Multiple encoding options",
+      imageUrl: "./S5200E.webp",
+    },
+  ];
   return (
     <main>
       <Header />
       <Hero title={"IMPORT"} />
       <BankingSolutions
         cards={bankingCards}
-        title="BANKING AND CARD SOLUTIONS"
-        highlightWord="AND"
+        title="Banking And Financial Equipment"
+        highlightWord=""
       />
       <IdCardSection
         title="IDENTIFICATION"
-        highlightedWord="AND"
-        mainHeading="ID CARD PRINTERS AND ITS CONSUMABLES"
-        description="OUR IMPORTED ID CARD PRINTERS AND CONSUMABLES ENSURE SEAMLESS AND PROFESSIONAL IDENTIFICATION SOLUTIONS. DESIGNED FOR PRECISION AND RELIABILITY, THESE PRODUCTS ARE IDEAL FOR ORGANIZATIONS, SCHOOLS, AND GOVERNMENT INSTITUTIONS REQUIRING HIGH-QUALITY IDENTITY PRINTING SYSTEMS."
-        additionalText="OUR IMPORTED ID CARD PRINTERS AND CONSUMABLES ENSURE SEAMLESS AND PROFESSIONAL IDENTIFICATION SOLUTIONS. DESIGNED FOR PRECISION AND RELIABILITY, THESE PRODUCTS ARE IDEAL FOR ORGANIZATIONS, SCHOOLS, AND GOVERNMENT INSTITUTIONS REQUIRING HIGH-QUALITY IDENTITY PRINTING SYSTEMS."
+        highlightedWord=""
+        mainHeading="Banking & Financial Equipment"
+        description="We provide financial institutions with high-quality banking and identification solutions. Our imported products help banks enhance security, streamline operations, and offer customers a seamless banking experience."
+        additionalText=""
+        imageUrl="./atmhand.jpeg"
       />
+
+      <ProductGrid products={products} />
 
       <RightCardSection
-        title="IDENTIFICATION"
-        highlightedWord="AND"
-        mainHeading="ID CARD PRINTERS AND ITS CONSUMABLES"
-        description="OUR IMPORTED ID CARD PRINTERS AND CONSUMABLES ENSURE SEAMLESS AND PROFESSIONAL IDENTIFICATION SOLUTIONS. DESIGNED FOR PRECISION AND RELIABILITY, THESE PRODUCTS ARE IDEAL FOR ORGANIZATIONS, SCHOOLS, AND GOVERNMENT INSTITUTIONS REQUIRING HIGH-QUALITY IDENTITY PRINTING SYSTEMS."
-        additionalText="OUR IMPORTED ID CARD PRINTERS AND CONSUMABLES ENSURE SEAMLESS AND PROFESSIONAL IDENTIFICATION SOLUTIONS. DESIGNED FOR PRECISION AND RELIABILITY, THESE PRODUCTS ARE IDEAL FOR ORGANIZATIONS, SCHOOLS, AND GOVERNMENT INSTITUTIONS REQUIRING HIGH-QUALITY IDENTITY PRINTING SYSTEMS."
+        title="Automotive And Industrial Supplies"
+        highlightedWord=""
+        mainHeading=""
+        description="We import durable, high-performance vehicle tyres to ensure safety and efficiency in transportation. Our tyres meet international quality standards, catering to various vehicle types, from passenger cars to heavy-duty trucks."
+        additionalText=""
+        imageUrl="./tires.jpeg"
       />
 
-      <ProductGrid />
+      <IdCardSection
+        title="Promotional & Business Materials"
+        highlightedWord=""
+        mainHeading=""
+        description="We supply businesses with high-quality promotional materials to support their marketing and branding needs. From personalized diaries to custom giveaways, we help companies enhance their corporate identity."
+        additionalText=" Custom-branded items like diaries, pens, and corporate gifts. Educational, professional, and business-related printed materials."
+        imageUrl="./books.png"
+      />
 
-      <SectionWithImage
+      {/* <SectionWithImage
         title="AFTER-SALES"
         highlightedWord="SUPPORT"
         icon="headphones"
@@ -137,7 +187,7 @@ export default function Home() {
         description="We understand that purchasing equipment is just the first step. Our after-sales support ensures that your investment continues to perform optimally over time. We provide expert maintenance and support services for a variety of specialized equipment."
         imageUrl="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DHBgcfS42P6lJvB3JcOQWHwRlp2v7R.png"
         imagePosition="right"
-      />
+      /> */}
 
       <Footer />
     </main>

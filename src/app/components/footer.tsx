@@ -7,13 +7,16 @@ const Footer = () => {
           <div className="space-y-4 max-w-sm">
             <div>
               <h1 className="text-2xl font-bold">
-                YOUR<span className="text-white">COMPANY</span>
+                Tewaru<span className="text-white">Imports</span>
               </h1>
-              <p className="text-sm text-gray-400">Your Slogan Here</p>
+              <p className="text-sm text-gray-400">
+                Your Gateway to Quality Imports
+              </p>
             </div>
             <p className="text-sm text-gray-400">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque totam
+              At Tewaru, we specialize in bringing the best and most reliable
+              imports from around the world, ensuring quality and efficiency
+              every step of the way.
             </p>
             <div className="flex gap-3">
               <a
@@ -41,22 +44,21 @@ const Footer = () => {
           <div className="space-y-2">
             <h2 className="font-semibold mb-4">About Us</h2>
             <ul className="space-y-2 text-sm text-gray-400">
-              {[
-                "Many",
-                "Some Us",
-                "Therefore",
-                "Always Is",
-                "Doloremque",
-                "Minima Veniam, Quis Nostrum",
-                "Interne",
-              ].map((item, index) => (
-                <li
-                  key={index}
-                  className="hover:text-white transition-colors cursor-pointer"
-                >
-                  {item}
-                </li>
-              ))}
+              <li className="hover:text-white transition-colors cursor-pointer">
+                Expertise in global trade
+              </li>
+              <li className="hover:text-white transition-colors cursor-pointer">
+                Reliable and timely deliveries
+              </li>
+              <li className="hover:text-white transition-colors cursor-pointer">
+                Premium quality imports only
+              </li>
+              <li className="hover:text-white transition-colors cursor-pointer">
+                Trusted by businesses worldwide
+              </li>
+              <li className="hover:text-white transition-colors cursor-pointer">
+                Customized import solutions
+              </li>
             </ul>
           </div>
 
@@ -66,21 +68,15 @@ const Footer = () => {
             <div className="space-y-4 text-sm text-gray-400">
               <p className="flex items-center gap-2">
                 <span className="material-symbols-outlined">location_on</span>
-                Lorem ipsum
-                <br />
-                Lorem Ipsum Lorem 1234
+                1234 Import Blvd, Global City, Country
               </p>
               <p className="flex items-center gap-2">
                 <span className="material-symbols-outlined">phone</span>
-                Sed Do Eiusmod Tem?
-                <br />
-                123.456.7890
+                +123 456 7890
               </p>
               <p className="flex items-center gap-2">
                 <span className="material-symbols-outlined">mail</span>
-                Nati Us
-                <br />
-                info@stewaruet.com
+                sales@tewaruet.com
               </p>
             </div>
           </div>
@@ -91,7 +87,7 @@ const Footer = () => {
             <div className="flex w-full md:w-auto">
               <input
                 type="email"
-                placeholder="laboris nis *"
+                placeholder="Enter your email"
                 className="bg-neutral-700 px-4 py-2 rounded-l outline-none w-full md:w-auto"
               />
               <button className="bg-blue-500 px-4 rounded-r hover:bg-blue-600 transition-colors">
@@ -99,9 +95,8 @@ const Footer = () => {
               </button>
             </div>
             <p className="text-sm text-gray-400">
-              Lorem ipsum dolor sit amet,
-              <br />
-              consectetur elit,
+              Have questions? Feel free to reach out to us, and our team will be
+              happy to assist you.
             </p>
           </div>
         </div>
@@ -109,8 +104,22 @@ const Footer = () => {
         {/* Footer */}
         <div className="border-t border-neutral-700 pt-4 text-center">
           <p className="text-sm text-gray-400">
-            Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do
-            Eiusmod Tempor Incididu
+            &copy; {new Date().getFullYear()} Tewaru Imports. All Rights
+            Reserved. |{" "}
+            <a href="mailto:support@tewaruet.com" className="hover:text-white">
+              Support
+            </a>{" "}
+            |{" "}
+            <a href="mailto:account@tewaruet.com" className="hover:text-white">
+              Account
+            </a>{" "}
+            |{" "}
+            <a
+              href="mailto:technical@tewaruet.com"
+              className="hover:text-white"
+            >
+              Technical
+            </a>
           </p>
         </div>
       </div>
