@@ -2,11 +2,16 @@ import Image from "next/image";
 
 export function PartnersSection() {
   const partners = [
-    { name: "4P Company", logo: "/partners.png" },
-    { name: "Your Company", logo: "/partners.png" },
-    { name: "M Company", logo: "/partners.png" },
-    { name: "4P Company Alt", logo: "/partners.png" },
-    { name: "Your Company Alt", logo: "/partners.png" },
+    { name: "pos", logo: "/logos/pos.png" },
+    { name: "absy", logo: "/logos/absy.png" },
+    { name: "ethsw", logo: "/logos/ethsw.png" },
+    { name: "buna", logo: "/logos/buna.png" },
+    { name: "Your Company Alt", logo: "/logos/ormo.png" },
+    { name: "Your Company Alt", logo: "/logos/united.png" },
+    { name: "Your Company Alt", logo: "/logos/debub.png" },
+    { name: "Your Company Alt", logo: "/logos/anbesa.png" },
+    { name: "Your Company Alt", logo: "/logos/wegagen.png" },
+    { name: "Your Company Alt", logo: "/logos/next.png" },
   ];
 
   return (

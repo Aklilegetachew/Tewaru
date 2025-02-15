@@ -7,7 +7,7 @@ const Footer = () => {
           <div className="space-y-4 max-w-sm">
             <div>
               <h1 className="text-2xl font-bold">
-                Tewaru<span className="text-white">Imports</span>
+                Tewaru <span className="text-white">Trading</span>
               </h1>
               <p className="text-sm text-gray-400">
                 Your Gateway to Quality Imports

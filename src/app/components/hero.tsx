@@ -33,6 +33,17 @@ export const Hero = ({ title }: { title: string }) => {
         </>
       );
       break;
+    case "EXPORT":
+      headingContent = (
+        <>
+          PRODUCTS
+          <br />
+          <span className="text-primary">WE</span>
+          <br />
+          EXPORT
+        </>
+      );
+      break;
     case "SERVICES":
       headingContent = (
         <>

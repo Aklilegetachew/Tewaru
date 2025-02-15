@@ -63,20 +63,20 @@ export function WhyChooseUsSection() {
           </motion.h2>
         </div>
 
-        <div className="relative max-w-5xl mx-auto">
+        <div className="relative max-w-5xl mx-auto items-center justify-center">
           {/* Center Image */}
           <motion.div
-            className="relative aspect-video mb-8 md:mb-0"
+            className="relative aspect-video mb-8 md:mb-0 flex justify-center items-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
             <Image
-              src="/companyImage.png"
+              src="/globRm.png"
               alt="Shipping containers"
-              width={800}
-              height={600}
-              className="rounded-lg object-cover w-full h-full"
+              width={400}
+              height={300}
+              className="rounded-lg object-cover "
             />
           </motion.div>
 

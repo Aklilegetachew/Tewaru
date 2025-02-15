@@ -29,7 +29,7 @@ export function SectionWithImage({
 
   return (
     <section className="py-16 px-4 md:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto  space-y-12">
         {/* Main Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
           {title} <span className="text-orange-500">{highlightedWord}</span>
@@ -43,7 +43,7 @@ export function SectionWithImage({
           )}
         >
           {/* Content Side */}
-          <div className="flex flex-col items-center text-center lg:items-start lg:text-left space-y-6">
+          <div className="flex flex-col text-center items-center lg:items-center lg:text-left space-y-6">
             {/* Icon */}
             <div className="mb-4">{icons[icon]}</div>
 
@@ -62,7 +62,7 @@ export function SectionWithImage({
           {/* Image Side */}
           <div
             className={cn(
-              "aspect-square bg-gray-200 rounded-lg overflow-hidden",
+              "aspect-square  rounded-lg overflow-hidden",
               "lg:aspect-auto lg:h-[400px]"
             )}
           >
@@ -73,7 +73,7 @@ export function SectionWithImage({
                 className="w-full h-full object-cover"
               />
             ) : (
-              <div className="w-full h-full bg-gray-200" />
+              <div className="w-full h-full" />
             )}
           </div>
         </div>

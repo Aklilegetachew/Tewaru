@@ -52,7 +52,7 @@ export function ProductCard({
           }
         `}
       >
-        <Button className="bg-blue-600 hover:bg-blue-700">LEARN MORE</Button>
+        <Button className="bg-[#fba432] hover:bg-[#b68039]">LEARN MORE</Button>
       </CardFooter>
     </Card>
   );

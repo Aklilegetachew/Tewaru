@@ -43,9 +43,11 @@ export function Header() {
           <NavLink href="/imports">IMPORTS</NavLink>
           <NavLink href="/exports">EXPORTS</NavLink>
           <NavLink href="/services">SERVICES</NavLink>
-          <Button className="bg-primary text-white hover:bg-primary/90">
-            CONTACT US
-          </Button>
+          <NavLink href="/contactus">
+            <Button className="bg-primary text-white hover:bg-primary/90">
+              CONTACT US
+            </Button>
+          </NavLink>
         </nav>
 
         {/* Mobile Hamburger Menu */}
@@ -80,9 +82,11 @@ export function Header() {
           <div onClick={() => setIsMenuOpen(false)}>
             <NavLink href="/services">SERVICES</NavLink>
           </div>
-          <Button className="bg-primary text-white hover:bg-primary/90">
-            CONTACT US
-          </Button>
+          <NavLink href="/contactus">
+            <Button className="bg-primary text-white hover:bg-primary/90">
+              CONTACT US
+            </Button>
+          </NavLink>
         </motion.div>
       )}
     </motion.header>
